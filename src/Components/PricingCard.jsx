@@ -52,7 +52,7 @@ function PricingCard() {
                                     <span className="text-[#848199] text-lg font-[500]">{timePeriod}</span>
                                 </div>
 
-                                <h3 className="mb-4 text-[#231D4F] text-2xl font-semibold">Freemium</h3>
+                                <h3 className="mb-4 text-[#231D4F] text-[28px] font-medium">Freemium</h3>
 
 
 
@@ -233,7 +233,7 @@ function PricingCard() {
                                     <span className="text-[#fff] text-lg font-[500]">{timePeriod2}</span>
                                 </div>
 
-                                <h3 className="mb-4 text-[#fff] text-2xl font-semibold">Premium</h3>
+                                <h3 className="mb-4 text-[#fff] text-[28px] font-medium">Premium</h3>
 
 
 
