@@ -4,8 +4,8 @@ function PricingCard() {
 
     const [activeButton, setActiveButton] = useState('monthly');
 
-    const handleButtonClick = (buttonType ,type) => {
-        setActiveButton(buttonType , type);
+    const handleButtonClick = (buttonType, type) => {
+        setActiveButton(buttonType, type);
     };
 
 
@@ -17,34 +17,36 @@ function PricingCard() {
 
     const amount2 = activeButton === 'monthly' ? '€8' : '€90';
     const timePeriod2 = activeButton === 'monthly' ? '/month' : '/year';
-    
+
     return (
-        <div className="w-full md:w-[1000px] mt-20 pb-20">
-            <div className="flex justify-end w-full">
-                <div className="bg-[#fff] rounded-full space-x-2">
-                    <button
-                        onClick={() => handleButtonClick('monthly')}
-                        className={`px-4 py-3 rounded-full font-[600] w-32 text-white transition duration-300 ${activeButton === 'monthly' ? 'bg-[#BB6BD9]' : 'bg-[#fff] text-[#3B3472]'
-                            }`}
-                    >
-                        MONTHLY
-                    </button>
-                    <button
-                        onClick={() => handleButtonClick('yearly')}
-                        className={`px-4 py-3 rounded-full font-[600] w-32 text-[#3B3472] transition duration-300 ${activeButton === 'yearly' ? 'bg-[#BB6BD9] text-[#fff]' : 'bg-[#fff] text-[#3B3472]'
-                            }`}
-                    >
-                        YEARLY
-                    </button>
+        <div className="w-full  mt-20 pb-20 ">
+            <div className="flex justify-center">
+                <div className="flex justify-end w-full md:w-[800px] ">
+                    <div className="bg-[#fff] rounded-full space-x-2">
+                        <button
+                            onClick={() => handleButtonClick('monthly')}
+                            className={`px-4 py-3 rounded-full font-[600] w-32 text-white transition duration-300 ${activeButton === 'monthly' ? 'bg-[#BB6BD9]' : 'bg-[#fff] text-[#3B3472]'
+                                }`}
+                        >
+                            MONTHLY
+                        </button>
+                        <button
+                            onClick={() => handleButtonClick('yearly')}
+                            className={`px-4 py-3 rounded-full font-[600] w-32 text-[#3B3472] transition duration-300 ${activeButton === 'yearly' ? 'bg-[#BB6BD9] text-[#fff]' : 'bg-[#fff] text-[#3B3472]'
+                                }`}
+                        >
+                            YEARLY
+                        </button>
+                    </div>
                 </div>
             </div>
 
 
             <div className="flex justify-center">
-                <div className="bg-white bg-opacity-40 backdrop-blur-lg rounded-[26px] px-2 relative mt-20 py-4 w-full md:w-[1000px]">
-                    <div className="grid grid-cols-8">
+                <div className="bg-white bg-opacity-40 backdrop-blur-lg rounded-[26px] px-2 relative mt-20 py-4 w-full md:w-[900px]">
+                    <div className="grid grid-cols-8 gap-2">
                         <div className=" col-span-8  md:col-span-4 md:h-[950px]">
-                            <div className="flex flex-col p-6 mx-auto max-w-[450px]  text-gray-900 bg-transparent rounded-[26px]  ">
+                            <div className="flex flex-col p-6 mx-auto max-w-sm  text-gray-900 bg-transparent rounded-[26px]  ">
                                 <div className="flex justify-start items-baseline my-8 text-[#231D4F]">
                                     <span className=" text-5xl font-extrabold mr-2">{amount}</span>
                                     <span className="text-[#848199] text-lg font-[500]">{timePeriod}</span>
@@ -225,7 +227,7 @@ function PricingCard() {
                         </div>
 
                         <div className="col-span-8  md:col-span-4 md:absolute right-10 -top-10 h-[950px]">
-                            <div className="flex flex-col p-6 mx-auto max-w-[450px] text-gray-900 bg-[#231D4F] rounded-[26px]  ">
+                            <div className="flex flex-col p-6 mx-auto max-w-sm text-gray-900 bg-[#231D4F] rounded-[26px]  ">
                                 <div className="flex justify-start items-baseline my-8 text-[#fff]">
                                     <span className=" text-5xl font-extrabold mr-2">{amount2}</span>
                                     <span className="text-[#fff] text-lg font-[500]">{timePeriod2}</span>
