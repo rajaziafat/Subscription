@@ -19,7 +19,7 @@ function PricingCard() {
     const timePeriod2 = activeButton === 'monthly' ? '/month' : '/year';
     
     return (
-        <div className="w-full md:w-[1100px] mt-20 pb-20">
+        <div className="w-full md:w-[1000px] mt-20 pb-20">
             <div className="flex justify-end w-full">
                 <div className="bg-[#fff] rounded-full space-x-2">
                     <button
@@ -41,7 +41,7 @@ function PricingCard() {
 
 
             <div className="flex justify-center">
-                <div className="bg-white bg-opacity-40 backdrop-blur-lg rounded-[26px] px-2 relative mt-20 py-4 w-full md:w-[1100px]">
+                <div className="bg-white bg-opacity-40 backdrop-blur-lg rounded-[26px] px-2 relative mt-20 py-4 w-full md:w-[1000px]">
                     <div className="grid grid-cols-8">
                         <div className=" col-span-8  md:col-span-4 md:h-[950px]">
                             <div className="flex flex-col p-6 mx-auto max-w-[450px]  text-gray-900 bg-transparent rounded-[26px]  ">
