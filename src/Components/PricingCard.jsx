@@ -228,7 +228,7 @@ function PricingCard() {
 
                         <div className="col-span-8  md:col-span-4 md:absolute right-10 -top-10 md:h-[950px]">
                             <div className="flex flex-col p-6 mx-auto max-w-sm text-gray-900 bg-[#22c55e] md:border-none border-[#333] rounded-[26px]  ">
-                                <div className="mt-14 w-full">
+                                <div className="mt-[54px] w-full">
                                     <div className="flex justify-start items-baseline my-8 text-[#333]">
                                         <span className=" text-5xl font-extrabold mr-2">{amount2}</span>
                                         <span className="text-[#fff] text-lg font-[500]">{timePeriod2}</span>
