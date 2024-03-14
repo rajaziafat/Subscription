@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'md': '893px', // Define md screen starting from 869px
+        'md': '810px', // Define md screen starting from 869px
       },
     },
   },
