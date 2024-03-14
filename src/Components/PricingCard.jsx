@@ -21,18 +21,18 @@ function PricingCard() {
     return (
         <div className="w-full  mt-20 pb-20 ">
             <div className="flex justify-center">
-                <div className="flex justify-end w-full md:w-[800px] ">
-                    <div className="bg-[#fff] rounded-full space-x-2">
+                <div className="flex justify-center md:justify-end w-full md:w-[800px] ">
+                    <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-full space-x-2">
                         <button
                             onClick={() => handleButtonClick('monthly')}
-                            className={`px-4 py-3 rounded-full font-[600] w-32 text-white transition duration-300 ${activeButton === 'monthly' ? 'bg-[#BB6BD9]' : 'bg-[#fff] text-[#3B3472]'
+                            className={`px-4 py-3 rounded-full font-[600] w-32 text-[#3B3472] transition duration-300 ${activeButton === 'monthly' ? 'bg-[#22c55e] text-white' : 'bg-transparent text-[#22c55e]'
                                 }`}
                         >
                             MONTHLY
                         </button>
                         <button
                             onClick={() => handleButtonClick('yearly')}
-                            className={`px-4 py-3 rounded-full font-[600] w-32 text-[#3B3472] transition duration-300 ${activeButton === 'yearly' ? 'bg-[#BB6BD9] text-[#fff]' : 'bg-[#fff] text-[#3B3472]'
+                            className={`px-4 py-3 rounded-full font-[600] w-32 text-[#3B3472] transition duration-300 ${activeButton === 'yearly' ? 'bg-[#22c55e] text-[#fff]' : 'bg-transparent text-[#22c55e]'
                                 }`}
                         >
                             YEARLY
@@ -43,16 +43,16 @@ function PricingCard() {
 
 
             <div className="flex justify-center">
-                <div className="bg-white bg-opacity-40 backdrop-blur-lg rounded-[26px] px-2 md:relative mt-20 py-4 w-full md:w-[900px]">
+                <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-[26px] px-2 md:relative mt-5 md:mt-20 py-4 w-full md:w-[900px]">
                     <div className="grid grid-cols-8 gap-2">
                         <div className=" col-span-8  md:col-span-4 md:h-[980px]">
-                            <div className="flex flex-col p-6 mx-auto max-w-sm  text-gray-900 bg-transparent rounded-[26px]  ">
-                                <div className="flex justify-start items-baseline my-8 text-[#231D4F]">
+                            <div className="flex flex-col p-6 mx-auto max-w-sm  text-gray-900 bg-transparent border md:border-none border-[#22c55e] rounded-[26px]  ">
+                                <div className="flex justify-start items-baseline my-8 text-[#22c55e]">
                                     <span className=" text-5xl font-extrabold mr-2">{amount}</span>
-                                    <span className="text-[#848199] text-lg font-[500]">{timePeriod}</span>
+                                    <span className="text-[#fff] text-lg font-[500]">{timePeriod}</span>
                                 </div>
 
-                                <h3 className="mb-4 text-[#231D4F] text-[28px] font-medium">Freemium</h3>
+                                <h3 className="mb-4 text-[#fff] text-[28px] font-medium">Freemium</h3>
 
 
 
@@ -65,7 +65,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#BB6BD9] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#22c55e] bg-[#fff] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#BB6BD9] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#22c55e] bg-[#fff] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#BB6BD9] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#22c55e] bg-[#fff] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#BB6BD9] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#22c55e] bg-[#fff] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#BB6BD9] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#22c55e] bg-[#fff] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +150,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#BB6BD9] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#22c55e] bg-[#fff] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +167,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#BB6BD9] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#22c55e] bg-[#fff] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +184,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#BB6BD9] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#22c55e] bg-[#fff] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +201,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#BB6BD9] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#22c55e] bg-[#fff] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -218,7 +218,7 @@ function PricingCard() {
                                 </ul>
                                 <a
                                     href="#"
-                                    className="text-[#fff] bg-[#979797]  rounded-full hover:bg-[#BB6BD9] hover:text-[#fff]  duration-200 ease-in-out font-medium  text-lg  px-5 py-2.5 text-center "
+                                    className="text-[#fff]  bg-[#22c55e]  rounded-full hover:bg-[#fff] hover:bg-opacity-30 hover:text-[#fff]  duration-200 ease-in-out font-medium  text-lg  px-5 py-2.5 text-center "
                                 >
                                     Choose Plan
                                 </a>
@@ -227,8 +227,8 @@ function PricingCard() {
                         </div>
 
                         <div className="col-span-8  md:col-span-4 md:absolute right-10 -top-10 md:h-[950px]">
-                            <div className="flex flex-col p-6 mx-auto max-w-sm text-gray-900 bg-[#231D4F] rounded-[26px]  ">
-                                <div className="flex justify-start items-baseline my-8 text-[#fff]">
+                            <div className="flex flex-col p-6 mx-auto max-w-sm text-gray-900 bg-[#22c55e] md:border-none border-[#333] rounded-[26px]  ">
+                                <div className="flex justify-start items-baseline my-8 text-[#333]">
                                     <span className=" text-5xl font-extrabold mr-2">{amount2}</span>
                                     <span className="text-[#fff] text-lg font-[500]">{timePeriod2}</span>
                                 </div>
@@ -246,7 +246,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -263,7 +263,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -280,7 +280,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +297,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -314,7 +314,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -331,7 +331,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -348,7 +348,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -365,7 +365,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -382,7 +382,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -398,7 +398,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -415,7 +415,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -432,7 +432,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -448,7 +448,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -465,7 +465,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -483,7 +483,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -499,7 +499,7 @@ function PricingCard() {
                                     <li className="flex items-center space-x-3">
                                         {/* Icon */}
                                         <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#5243C2] bg-opacity-30 rounded-full"
+                                            className="flex-shrink-0 w-5 h-5 text-[#fff] bg-[#333] bg-opacity-30 rounded-full"
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -516,7 +516,7 @@ function PricingCard() {
                                 </ul>
                                 <a
                                     href="#"
-                                    className="text-white bg-[#BB6BD9] rounded-full hover:bg-[#979797]  duration-200 ease-in-out font-medium  text-lg  px-5 py-2.5 text-center "
+                                    className="text-white bg-[#333] rounded-full hover:bg-[#fff]  hover:bg-opacity-30 duration-200 ease-in-out font-medium  text-lg  px-5 py-2.5 text-center "
                                 >
                                     Choose Plan
                                 </a>

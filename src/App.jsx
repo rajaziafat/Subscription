@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div className='flex justify-center items-center  mx-auto container'>
+      <div className='flex justify-center items-center px-2 mx-auto container'>
         <PricingCard />
       </div>
     </>
