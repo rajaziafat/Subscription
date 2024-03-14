@@ -217,7 +217,7 @@ function PricingCard() {
 
                                 </ul>
 
-                                <a href="#" className="text-[#fff] w-full bg-[#22c55e] max-w-sm md:absolute bottom-10  rounded-full hover:bg-[#fff] hover:bg-opacity-30 hover:text-[#fff] duration-200 ease-in-out font-medium text-lg px-5 py-2.5 text-center">
+                                <a href="#" className="text-[#fff] w-full bg-[#22c55e] max-w-xs md:absolute bottom-10  rounded-full hover:bg-[#fff] hover:bg-opacity-30 hover:text-[#fff] duration-200 ease-in-out font-medium text-lg px-5 py-2.5 text-center">
                                     Choose Plan
                                 </a>
 
