@@ -45,7 +45,7 @@ function PricingCard() {
             <div className="flex justify-center">
                 <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-[26px] px-2 md:relative mt-5 md:mt-20 py-4 w-full lg:w-[900px]">
                     <div className="grid grid-cols-8 gap-2">
-                        <div className=" col-span-8  md:col-span-4 md:h-[980px]">
+                        <div className=" col-span-8  md:col-span-4 md:h-[1018px]">
                             <div className="flex flex-col p-6 mx-auto max-w-sm  text-gray-900 bg-transparent border md:border-none border-[#22c55e] rounded-[26px]  ">
                                 <div className="flex justify-start items-baseline my-8 text-[#22c55e]">
                                     <span className=" text-5xl font-extrabold mr-2">{amount}</span>
@@ -226,7 +226,7 @@ function PricingCard() {
 
                         </div>
 
-                        <div className="col-span-8  md:col-span-4 md:absolute right-10 -top-10 md:h-[950px]">
+                        <div className="col-span-8  md:col-span-4 md:absolute right-10 -top-10 md:h-[980px]">
                             <div className="flex flex-col p-6 mx-auto max-w-sm text-gray-900 bg-[#22c55e] md:border-none border-[#333] rounded-[26px]  ">
                                 <div className="mt-[54px] w-full">
                                     <div className="flex justify-start items-baseline my-8 text-[#333]">
