@@ -25,14 +25,14 @@ function PricingCard() {
                     <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-full space-x-2">
                         <button
                             onClick={() => handleButtonClick('monthly')}
-                            className={`px-4 py-3 rounded-full font-[600] w-32 text-[#3B3472] transition duration-300 ${activeButton === 'monthly' ? 'bg-[#22c55e] text-white' : 'bg-transparent text-[#22c55e]'
+                            className={`px-4 py-3 rounded-full font-[600] w-32 text-[#22c55e] transition duration-300 ${activeButton === 'monthly' ? 'bg-[#22c55e] text-white' : 'bg-transparent text-[#22c55e]'
                                 }`}
                         >
                             MONTHLY
                         </button>
                         <button
                             onClick={() => handleButtonClick('yearly')}
-                            className={`px-4 py-3 rounded-full font-[600] w-32 text-[#3B3472] transition duration-300 ${activeButton === 'yearly' ? 'bg-[#22c55e] text-[#fff]' : 'bg-transparent text-[#22c55e]'
+                            className={`px-4 py-3 rounded-full font-[600] w-32 text-[#22c55e] transition duration-300 ${activeButton === 'yearly' ? 'bg-[#22c55e] text-[#fff]' : 'bg-transparent text-[#22c55e]'
                                 }`}
                         >
                             YEARLY
