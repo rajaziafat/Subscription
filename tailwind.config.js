@@ -5,7 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'md': '893px', // Define md screen starting from 869px
+      },
+    },
   },
-  plugins: [],
-}
+};
